@@ -1,9 +1,8 @@
 a = int(input("Введите число: "))
 c = 5
 while a > c:   
-    c = c * 5
-    if a == c:
-        break
+    c *= 5
+       
 if a == c:
     print("Число является степенью числа 5")
 else:
