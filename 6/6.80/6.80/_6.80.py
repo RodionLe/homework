@@ -3,9 +3,9 @@ length = len(a)
 x = 0
 y = 0
 for i in a:
-    if int(i) == 0:
+    if i == '0':
         x += 1
-    if int(i) == 9:
+    if i == '9':
         y += 1
 if x > y:
     print("'0' встречатеся чаще чем '9'")
