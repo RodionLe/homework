@@ -6,5 +6,5 @@ while i == j:
     j =(str[len(str) - 1])
     i = (str[0 + x])
     x +=1
-    print(i,j)
+print(i,j)
    
