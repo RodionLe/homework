@@ -1,11 +1,12 @@
-x = 4 # количество дней 
+import random
+x = 31 # количество дней 
 tries = 0
 z = 0
-while tries < x:
-    print("Напишите 'да' или 'нет', если были/ не было осадков.")
-    y = input("Были ли осадки: ")
-    if y == "да":
+for i in range(0, 31):
+    y = random.randint(0, 1)
+    print(i, ':', y)
+    if y == 0:
         z += 1
-    tries += 1
-print(z)
+   
+print(z >= 10)
 
