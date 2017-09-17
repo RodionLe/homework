@@ -3,7 +3,9 @@ length = len(number)
 x = 0
 N = length - 1
 z = 0
+
 for j in range(N):
+    flag = True
     for i in range(length - 1):
         x = number[i]
         y = number[i + 1]
@@ -11,10 +13,9 @@ for j in range(N):
             z = number[i]
             number[i] = number[i + 1]
             number[i + 1] = z
+            flag = False
+    if flag:
+        break
 print(number)
        
 
-    
-
-   
-       
